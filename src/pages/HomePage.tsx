@@ -48,11 +48,9 @@ const HomePage: React.FC = () => {
   const { userData } = useUser();
   
   useEffect(() => {
-    // Update document title
     document.title = 'HarmonyMind - Music Therapy for Mental Wellbeing';
   }, []);
   
-  // Determine completed sessions
   const completedSessionIds = userData?.completedSessions || [];
   
   return (
